@@ -1,0 +1,2359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunbeam Samanvay 1.0 | Ace One National Youth Parliament & MUN</title>
+  <meta name="description" content="Sunbeam Samanvay 1.0 (Ace One National Conclave) brings together Model United Nations and Indian Youth Parliament at Sunbeam Academy, Samneghat for two days of debate, diplomacy, democracy, and consequential ideas." />
+  <meta name="theme-color" content="#064e3b" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sunbeam Samanvay 1.0 | Ace One National Conclave" />
+  <meta property="og:description" content="Join 700+ delegates across 8 premier committees at Sunbeam Academy, Samneghat, Varanasi. ₹1.6 Lakhs in Cash Prizes. 23–24 January 2027." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            emerald: {
+              850: '#06503c',
+              950: '#03231a',
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+          },
+          keyframes: {
+            waveMove: {
+              '0%': { transform: 'translateX(0)' },
+              '50%': { transform: 'translateX(-25%)' },
+              '100%': { transform: 'translateX(0)' }
+            },
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-12px) rotate(0.4deg)' }
+            },
+            floatMid: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            },
+            floatReverse: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(10px) rotate(-0.5deg)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+              '50%': { opacity: '0.7', transform: 'scale(1.06)' }
+            },
+            shine: {
+              '0%': { backgroundPosition: '200% center' },
+              '100%': { backgroundPosition: '-200% center' }
+            }
+          },
+          animation: {
+            'wave-slow': 'waveMove 16s ease-in-out infinite',
+            'float-4k': 'floatSlow 6s ease-in-out infinite',
+            'float-mid': 'floatMid 4.5s ease-in-out infinite',
+            'float-rev': 'floatReverse 7s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 5s ease-in-out infinite',
+            'shine': 'shine 4s linear infinite',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* ================= 4K FLOATING & GLASSMORPHISM DESIGN SYSTEM ================= */
+    
+    /* 4K Ultra-Crisp Floating Glass Elements */
+    .float-card-4k {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 
+        0 10px 30px -5px rgba(6, 78, 59, 0.08),
+        0 20px 45px -10px rgba(5, 150, 105, 0.12),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .float-card-4k:hover {
+      transform: translateY(-8px) scale(1.015);
+      box-shadow: 
+        0 20px 40px -10px rgba(6, 78, 59, 0.16),
+        0 35px 70px -15px rgba(5, 150, 105, 0.28),
+        inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+      border-color: rgba(52, 211, 153, 0.6);
+    }
+
+    /* 4K Dark Obsidian Floating Glass */
+    .float-card-dark-4k {
+      background: rgba(6, 78, 59, 0.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(52, 211, 153, 0.35);
+      box-shadow: 
+        0 15px 35px -5px rgba(2, 44, 34, 0.4),
+        0 25px 60px -10px rgba(5, 150, 105, 0.3),
+        inset 0 1px 1px 0 rgba(167, 243, 208, 0.25);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .float-card-dark-4k:hover {
+      transform: translateY(-8px) scale(1.015);
+      box-shadow: 
+        0 25px 50px -10px rgba(2, 44, 34, 0.6),
+        0 40px 80px -15px rgba(16, 185, 129, 0.4),
+        inset 0 1px 2px 0 rgba(167, 243, 208, 0.4);
+      border-color: rgba(110, 231, 183, 0.7);
+    }
+
+    /* 4K Hero Glowing Spotlight */
+    .glow-orb-emerald {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.32) 0%, rgba(5, 150, 105, 0.12) 50%, transparent 75%);
+      filter: blur(40px);
+      pointer-events: none;
+    }
+
+    /* Wavy Section Dividers */
+    .wave-divider {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      line-height: 0;
+      direction: ltr;
+    }
+    .wave-divider svg {
+      width: calc(100% + 1.3px);
+      height: 70px;
+      display: block;
+    }
+    @media (min-width: 768px) {
+      .wave-divider svg {
+        height: 110px;
+      }
+    }
+
+    /* Gradient Texts */
+    .gradient-text-emerald {
+      background: linear-gradient(135deg, #064e3b 0%, #059669 50%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-text-gold {
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Custom 4K Specular Shimmer on CTA */
+    .shimmer-btn {
+      background: linear-gradient(90deg, #064e3b 0%, #047857 25%, #10b981 50%, #047857 75%, #064e3b 100%);
+      background-size: 200% auto;
+      animation: shine 4s linear infinite;
+    }
+
+    /* Smooth Scrollbar */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f0fdf4;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #059669;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #047857;
+    }
+  </style>
+</head>
+<body class="bg-[#f6faf6] text-slate-800 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-950 overflow-x-hidden">
+
+  <!-- ================= TOP ANNOUNCEMENT TICKER ================= -->
+  <div class="bg-forest-950 text-emerald-100 text-xs py-2 px-4 border-b border-emerald-800/60 sticky top-0 z-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3 text-xs md:text-sm font-medium">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-ping"></span> 4K LIVE
+        </span>
+        <span class="hidden md:inline">🏛️ <strong>Sunbeam Samanvay 1.0</strong> · National Youth Parliament & MUN Conclave</span>
+        <span class="text-emerald-500 hidden lg:inline">|</span>
+        <span class="text-emerald-200">Early Bird Pass: <strong>₹999</strong> (Save ₹200)</span>
+        <span class="text-emerald-500 hidden lg:inline">|</span>
+        <span class="hidden sm:inline text-emerald-300">Dates: <strong>23–24 January 2027</strong> · Varanasi</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#register" class="text-gold-400 hover:text-white font-bold transition-colors flex items-center gap-1.5">
+          <span>Register Now</span> <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 4K FLOATING NAVBAR ================= -->
+  <nav id="navbar" class="sticky top-[37px] z-40 bg-white/85 backdrop-blur-xl border-b border-emerald-100/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-forest-900 to-emerald-500 flex items-center justify-center text-white shadow-lg shadow-emerald-900/25 group-hover:scale-105 group-hover:rotate-2 transition-all">
+            <i data-lucide="award" class="w-7 h-7 text-emerald-200"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-cinzel text-xl md:text-2xl font-extrabold tracking-tight text-forest-950">SAMANVAY</span>
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-300">1.0</span>
+            </div>
+            <p class="text-[11px] font-bold text-emerald-700 tracking-wider uppercase">Ace One National Conclave</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="#about" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">About</a>
+          <a href="#forums" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Forums</a>
+          <a href="#committees" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Committees (8)</a>
+          <a href="#schedule" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Schedule</a>
+          <a href="#advisory" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Advisory Board</a>
+          <a href="#gallery" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Gallery</a>
+          <a href="#brochure" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Brochure</a>
+          <a href="#contact" class="text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-colors">Contact</a>
+        </div>
+
+        <!-- Desktop Action Buttons -->
+        <div class="hidden md:flex items-center space-x-3.5">
+          <button onclick="openAdminModal()" class="px-3.5 py-2.5 text-xs font-bold text-emerald-900 bg-white hover:bg-emerald-50 border border-emerald-200 rounded-2xl shadow-sm hover:shadow transition-all flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-700"></i> Admin
+          </button>
+          <!-- Floating Register Now Button -->
+          <a href="#register" class="shimmer-btn px-6 py-2.5 text-sm font-extrabold text-white rounded-2xl shadow-lg shadow-emerald-900/25 hover:shadow-emerald-600/35 hover:-translate-y-0.5 transition-all flex items-center gap-2 border border-emerald-400/30">
+            <span>Register Now</span>
+            <i data-lucide="sparkles" class="w-4 h-4 text-emerald-200 animate-pulse"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden items-center space-x-2">
+          <button onclick="toggleMobileMenu()" class="p-2.5 rounded-2xl text-forest-900 hover:bg-emerald-50 focus:outline-none">
+            <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-2xl border-b border-emerald-100 px-6 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">About Samanvay</a>
+      <a href="#forums" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Forums</a>
+      <a href="#committees" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Committees & Agendas</a>
+      <a href="#schedule" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Schedule</a>
+      <a href="#advisory" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Advisory Board</a>
+      <a href="#gallery" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Gallery</a>
+      <a href="#brochure" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Brochure</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-sm font-semibold text-slate-700 hover:text-emerald-700">Contact Us</a>
+      <div class="pt-3 border-t border-emerald-100 flex flex-col gap-2.5">
+        <button onclick="openAdminModal(); toggleMobileMenu();" class="w-full py-2.5 text-center text-xs font-bold text-emerald-900 bg-white border border-emerald-200 rounded-xl">
+          Admin Portal
+        </button>
+        <a href="#register" onclick="toggleMobileMenu()" class="w-full py-3 text-center text-sm font-black text-white bg-forest-900 rounded-xl shadow-md">
+          Register Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION WITH 4K DYNAMIC CANVAS WAVES & FLOATING ELEMENTS ================= -->
+  <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-36 overflow-hidden bg-gradient-to-b from-white via-emerald-50/40 to-[#f6faf6]">
+    
+    <!-- Dynamic Wavy Background Canvas -->
+    <canvas id="waveCanvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-45 z-0"></canvas>
+
+    <!-- 4K Glowing Ambient Floating Light Orbs -->
+    <div class="glow-orb-emerald top-16 left-12 w-96 h-96 animate-pulse-glow"></div>
+    <div class="glow-orb-emerald bottom-12 right-12 w-[30rem] h-[30rem] animate-pulse-glow" style="animation-delay: 2.5s;"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <!-- Top 4K Floating Tag -->
+      <div class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full float-card-4k text-emerald-950 mb-7 animate-float-4k">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+        <i data-lucide="landmark" class="w-4 h-4 text-emerald-700"></i>
+        <span class="text-xs md:text-sm font-extrabold tracking-wider uppercase">Inaugural National Conclave · Varanasi</span>
+      </div>
+
+      <!-- Main Headline in 4K Typography -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-cinzel font-black text-forest-950 tracking-tight leading-[1.12] mb-6 max-w-5xl mx-auto">
+        SUNBEAM <span class="gradient-text-emerald font-serif italic font-medium">SAMANVAY</span> 1.0
+      </h1>
+
+      <!-- Motto from Brochure -->
+      <p class="text-2xl sm:text-3xl md:text-4xl font-serif italic text-emerald-800 font-semibold tracking-wide mb-5">
+        &ldquo;Speak. Shape. Solve.&rdquo;
+      </p>
+
+      <!-- Subtitle description -->
+      <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
+        Hosted by <strong>Sunbeam Academy, Samneghat</strong>. A premier national stage uniting 700+ young visionaries for two days of parliamentary debate, international diplomacy, and transformative ideas.
+      </p>
+
+      <!-- 4K Floating Quotes Chips -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-5 mb-12 text-xs md:text-sm text-forest-950 font-bold">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl float-card-4k">
+          <i data-lucide="quote" class="w-4 h-4 text-emerald-600"></i> Disagreement is where dialogue begins
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl float-card-4k">
+          <i data-lucide="scale" class="w-4 h-4 text-emerald-600"></i> Bring your strongest argument, not your loudest voice
+        </span>
+      </div>
+
+      <!-- Hero 4K Floating Action Center -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <!-- Prominent Register Now CTA -->
+        <a href="#register" class="shimmer-btn w-full sm:w-auto px-10 py-4 text-base font-black text-white rounded-2xl shadow-xl shadow-emerald-900/30 hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-3 group border border-emerald-300/40">
+          <span>REGISTER NOW</span>
+          <i data-lucide="arrow-right" class="w-5 h-5 text-emerald-200 group-hover:translate-x-1.5 transition-transform"></i>
+        </a>
+        <a href="#committees" class="w-full sm:w-auto px-8 py-4 text-base font-extrabold text-forest-950 float-card-4k rounded-2xl hover:bg-emerald-50/90 transition-all flex items-center justify-center gap-2.5">
+          <i data-lucide="book-open" class="w-5 h-5 text-emerald-700"></i>
+          <span>Explore 8 Committees</span>
+        </a>
+        <a href="./assets/Sunbeam-Samanvay-Brochure.pdf" target="_blank" class="w-full sm:w-auto px-6 py-4 text-sm font-bold text-slate-700 float-card-4k rounded-2xl hover:bg-emerald-50/80 transition-all flex items-center justify-center gap-2">
+          <i data-lucide="download" class="w-4 h-4 text-emerald-800"></i>
+          <span>Brochure (PDF)</span>
+        </a>
+      </div>
+
+      <!-- ================= 4K FLOATING LIVE COUNTDOWN TIMER CARD ================= -->
+      <div class="max-w-4xl mx-auto float-card-4k rounded-[32px] p-6 sm:p-9 border border-white/80 animate-float-mid">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="text-left">
+            <span class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-wider text-emerald-900 bg-emerald-100/90 px-3.5 py-1 rounded-full mb-2 border border-emerald-300/60">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-emerald-700"></i> Conclave Countdown
+            </span>
+            <h3 class="font-cinzel text-xl sm:text-2xl font-black text-forest-950">23–24 January 2027</h3>
+            <p class="text-xs sm:text-sm text-slate-600 font-medium">Sunbeam Academy, Samneghat, Varanasi</p>
+          </div>
+
+          <!-- 4K Floating Countdown Grid -->
+          <div class="grid grid-cols-4 gap-2.5 sm:gap-4 text-center">
+            <div class="float-card-dark-4k rounded-2xl p-3 sm:p-4 min-w-[70px] sm:min-w-[90px]">
+              <span id="timer-days" class="font-cinzel text-2xl sm:text-4xl font-black text-emerald-300 block">--</span>
+              <span class="text-[10px] sm:text-xs uppercase font-bold text-emerald-100 tracking-wider">Days</span>
+            </div>
+            <div class="float-card-dark-4k rounded-2xl p-3 sm:p-4 min-w-[70px] sm:min-w-[90px]">
+              <span id="timer-hours" class="font-cinzel text-2xl sm:text-4xl font-black text-emerald-300 block">--</span>
+              <span class="text-[10px] sm:text-xs uppercase font-bold text-emerald-100 tracking-wider">Hours</span>
+            </div>
+            <div class="float-card-dark-4k rounded-2xl p-3 sm:p-4 min-w-[70px] sm:min-w-[90px]">
+              <span id="timer-mins" class="font-cinzel text-2xl sm:text-4xl font-black text-emerald-300 block">--</span>
+              <span class="text-[10px] sm:text-xs uppercase font-bold text-emerald-100 tracking-wider">Mins</span>
+            </div>
+            <div class="float-card-dark-4k rounded-2xl p-3 sm:p-4 min-w-[70px] sm:min-w-[90px]">
+              <span id="timer-secs" class="font-cinzel text-2xl sm:text-4xl font-black text-emerald-300 block">--</span>
+              <span class="text-[10px] sm:text-xs uppercase font-bold text-emerald-100 tracking-wider">Secs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TOP WAVY SECTION DIVIDER ================= -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#064e3b"></path>
+    </svg>
+  </div>
+
+  <!-- ================= 4K FLOATING STATS TICKER (GREEN & WHITE) ================= -->
+  <section class="bg-forest-900 text-white py-14 relative z-10 -mt-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        
+        <div class="float-card-dark-4k p-6 rounded-3xl">
+          <p id="stat-participants" class="font-cinzel text-4xl sm:text-5xl font-black text-emerald-300">700+</p>
+          <p class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100 font-extrabold mt-2">National Delegates</p>
+          <p class="text-[11px] text-emerald-300 mt-1">School & University Chambers</p>
+        </div>
+
+        <div class="float-card-dark-4k p-6 rounded-3xl">
+          <p class="font-cinzel text-4xl sm:text-5xl font-black text-emerald-300">8</p>
+          <p class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100 font-extrabold mt-2">Simulated Committees</p>
+          <p class="text-[11px] text-emerald-300 mt-1">4 Youth Parliament · 4 MUN</p>
+        </div>
+
+        <div class="float-card-dark-4k p-6 rounded-3xl">
+          <p class="font-cinzel text-4xl sm:text-5xl font-black text-gold-400">₹1,60,000</p>
+          <p class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100 font-extrabold mt-2">Total Cash Prizes</p>
+          <p class="text-[11px] text-emerald-300 mt-1">₹20,000 per Committee + Trophies</p>
+        </div>
+
+        <div class="float-card-dark-4k p-6 rounded-3xl">
+          <p class="font-cinzel text-4xl sm:text-5xl font-black text-emerald-300">ESTD 1972</p>
+          <p class="text-xs sm:text-sm uppercase tracking-widest text-emerald-100 font-extrabold mt-2">Sunbeam Samneghat</p>
+          <p class="text-[11px] text-emerald-300 mt-1">Historic Varanasi Campus</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOTTOM WAVY SECTION DIVIDER ================= -->
+  <div class="wave-divider rotate-180">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#064e3b"></path>
+    </svg>
+  </div>
+
+  <!-- ================= ABOUT SAMANVAY & HOST LEGACY ================= -->
+  <section id="about" class="py-20 lg:py-28 relative overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: Image & Parliament Art with 4K Floating Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- 4K Glowing Ambient Backlight -->
+            <div class="absolute -inset-5 bg-gradient-to-r from-emerald-300 to-forest-400 rounded-[44px] rotate-2 opacity-50 blur-xl"></div>
+            
+            <div class="relative float-card-4k p-3.5 rounded-[36px] overflow-hidden">
+              <img src="./assets/parliament_art.jpg" alt="Indian Parliament Illustration" class="w-full h-72 sm:h-80 object-cover rounded-[28px]" />
+              
+              <div class="p-5 float-card-dark-4k text-white rounded-2xl mt-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white">
+                    <i data-lucide="shield" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-cinzel text-sm font-bold text-emerald-200">Sunbeam Academy, Samneghat</h4>
+                    <p class="text-xs text-slate-300">Varanasi, Uttar Pradesh · Estd. 1972/1998</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating 4K Badge -->
+            <div class="absolute -bottom-6 -right-6 float-card-dark-4k text-white p-4 rounded-3xl flex items-center gap-3 animate-float-4k">
+              <i data-lucide="award" class="w-7 h-7 text-gold-400"></i>
+              <div>
+                <p class="text-xs font-semibold text-emerald-100">Inaugural Offline Edition</p>
+                <p class="text-sm font-black">January 2027</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Text Content from Brochure -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-950 text-xs font-black uppercase tracking-wider border border-emerald-300">
+            <i data-lucide="compass" class="w-3.5 h-3.5 text-emerald-700"></i> About The Conclave
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-bold text-forest-950 leading-tight">
+            Where Ideas Collide & <span class="gradient-text-emerald font-serif italic">Leadership Begins</span>
+          </h2>
+
+          <p class="text-base text-slate-600 leading-relaxed font-normal">
+            <strong>Samanvay</strong> is a flagship Youth Parliament and Model United Nations conference hosted by <strong>Sunbeam Academy, Samneghat</strong>. Its inaugural edition convenes students from across India to debate public issues, question established paradigms, and take part in the conversations that matter.
+          </p>
+
+          <p class="text-base text-slate-600 leading-relaxed font-normal">
+            Through parliamentary debate and international diplomacy, delegates test arguments, listen to opposing views, and understand the geopolitical complexities shaping India and the world.
+          </p>
+
+          <!-- 3 Core 4K Floating Pillars from Page 2 of Brochure -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+            
+            <div class="p-5 rounded-3xl float-card-4k">
+              <div class="w-10 h-10 rounded-2xl bg-forest-900 text-emerald-300 flex items-center justify-center mb-3 shadow-md">
+                <i data-lucide="book-marked" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-cinzel text-sm font-bold text-forest-950 mb-1">1. Building Arguments</h4>
+              <p class="text-xs text-slate-600">Through research, empirical facts, and a clear understanding of legal and policy issues.</p>
+            </div>
+
+            <div class="p-5 rounded-3xl float-card-4k">
+              <div class="w-10 h-10 rounded-2xl bg-forest-900 text-emerald-300 flex items-center justify-center mb-3 shadow-md">
+                <i data-lucide="landmark" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-cinzel text-sm font-bold text-forest-950 mb-1">2. Parliamentary Engagement</h4>
+              <p class="text-xs text-slate-600">Experiencing the real workings of legislative debate and international negotiations.</p>
+            </div>
+
+            <div class="p-5 rounded-3xl float-card-4k">
+              <div class="w-10 h-10 rounded-2xl bg-forest-900 text-emerald-300 flex items-center justify-center mb-3 shadow-md">
+                <i data-lucide="message-square-quote" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-cinzel text-sm font-bold text-forest-950 mb-1">3. Space for Dialogue</h4>
+              <p class="text-xs text-slate-600">Bringing together students with different viewpoints to engage, question, and respond.</p>
+            </div>
+
+          </div>
+
+          <!-- Note from Sunbeam Family 4K Quote Box (Brochure Page 4) -->
+          <div class="p-6 rounded-3xl float-card-dark-4k text-white shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 opacity-15 pointer-events-none">
+              <i data-lucide="feather" class="w-32 h-32 text-emerald-300"></i>
+            </div>
+            <p class="font-serif italic text-lg sm:text-xl text-emerald-200 mb-2">
+              &ldquo;रुक गए तो औरों का कदम बन जाओ, जो थक गए तो राह का दीया बन जाओ।&rdquo;
+            </p>
+            <p class="text-xs text-emerald-300 font-semibold">
+              — A Note from the Sunbeam Family & Secretariat
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FORUMS SECTION (4K FLOATING CHAMBERS) ================= -->
+  <section id="forums" class="py-20 bg-forest-50/70 border-y border-emerald-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-200/80 text-emerald-950 text-xs font-black uppercase tracking-wider">
+          <i data-lucide="layers" class="w-3.5 h-3.5 text-emerald-800"></i> Conclave Structure
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-forest-950 mt-3">
+          Two Arenas of Consequential Discourse
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3 font-normal">
+          Delegates can choose between domestic parliamentary simulations governing India’s legal frontiers, or global multilateral chambers addressing international security.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Forum 1: Indian Youth Parliament (4K Floating Card) -->
+        <div class="float-card-4k rounded-[32px] p-8 relative overflow-hidden group">
+          <div class="w-14 h-14 rounded-2xl bg-forest-900 text-emerald-300 flex items-center justify-center mb-6 shadow-md shadow-forest-950/25 group-hover:scale-110 transition-transform">
+            <i data-lucide="landmark" class="w-7 h-7"></i>
+          </div>
+
+          <span class="text-xs font-black uppercase tracking-widest text-emerald-700">Chamber 01</span>
+          <h3 class="text-2xl font-cinzel font-bold text-forest-950 mt-1 mb-3">Indian Youth Parliament</h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Simulating the Indian Parliament and legislative assemblies. Master bill drafting, constitutional defense, zero-hour interventions, and cross-party consensus on national policies.
+          </p>
+
+          <div class="space-y-2.5 mb-6 text-xs text-slate-700 font-medium">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>Lok Sabha:</strong> FCRA Amendment Bill 2026 & National Security</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>AIPPM:</strong> Simultaneous Polls (One Nation, One Election) & AI Deepfakes</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>UPLA:</strong> UP State Employment Strategy & Exam Transparency</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>Janmanch:</strong> School Education Reforms & NEP 2020 (Classes VI–X)</span>
+            </div>
+          </div>
+
+          <a href="#committees" onclick="filterCommittees('Youth Parliament')" class="inline-flex items-center gap-2 text-sm font-bold text-forest-900 hover:text-emerald-700 transition-colors">
+            View Parliamentary Agendas <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Forum 2: Model United Nations (4K Floating Card) -->
+        <div class="float-card-4k rounded-[32px] p-8 relative overflow-hidden group">
+          <div class="w-14 h-14 rounded-2xl bg-forest-900 text-emerald-300 flex items-center justify-center mb-6 shadow-md shadow-forest-950/25 group-hover:scale-110 transition-transform">
+            <i data-lucide="globe-2" class="w-7 h-7"></i>
+          </div>
+
+          <span class="text-xs font-black uppercase tracking-widest text-emerald-700">Chamber 02</span>
+          <h3 class="text-2xl font-cinzel font-bold text-forest-950 mt-1 mb-3">Model United Nations</h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Step into the roles of international ambassadors and press journalists. Deliberate international treaties, resolve humanitarian crises, and protect civil liberties under the UN Charter.
+          </p>
+
+          <div class="space-y-2.5 mb-6 text-xs text-slate-700 font-medium">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>UNHRC:</strong> State Surveillance, Pegasus Spyware & Biometric Privacy</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>UNCSW:</strong> Women's Economic Empowerment & Workplace Legal Reforms</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>UNGA:</strong> Reforming Multilateral Institutions & Geopolitics</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+              <span><strong>IIP:</strong> International Indian Press, Media Blackouts & Free Speech</span>
+            </div>
+          </div>
+
+          <a href="#committees" onclick="filterCommittees('MUN')" class="inline-flex items-center gap-2 text-sm font-bold text-forest-900 hover:text-emerald-700 transition-colors">
+            View Diplomatic Agendas <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 8 COMMITTEES DEEP DIVE SECTION (4K FLOATING CARDS) ================= -->
+  <section id="committees" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+        <div>
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-black uppercase tracking-wider border border-emerald-300">
+            <i data-lucide="award" class="w-3.5 h-3.5 text-emerald-700"></i> The 8 Conclave Chambers
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-cinzel font-bold text-forest-950 mt-3">
+            Committees & Agendas
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-xl">
+            Each committee features ₹20,000 cash prizes, customized study guides, and seasoned Executive Board members.
+          </p>
+        </div>
+
+        <!-- 4K Filter Pills -->
+        <div class="flex flex-wrap items-center gap-2.5 mt-6 md:mt-0">
+          <button onclick="filterCommittees('ALL')" class="comm-filter-btn px-4 py-2.5 rounded-2xl text-xs font-bold transition-all bg-forest-900 text-white shadow-md" data-filter="ALL">All (8)</button>
+          <button onclick="filterCommittees('Youth Parliament')" class="comm-filter-btn px-4 py-2.5 rounded-2xl text-xs font-bold transition-all bg-white text-slate-700 border border-emerald-200 hover:bg-emerald-50" data-filter="Youth Parliament">Youth Parliament</button>
+          <button onclick="filterCommittees('MUN')" class="comm-filter-btn px-4 py-2.5 rounded-2xl text-xs font-bold transition-all bg-white text-slate-700 border border-emerald-200 hover:bg-emerald-50" data-filter="MUN">Model UN</button>
+          <button onclick="filterCommittees('JUNIOR')" class="comm-filter-btn px-4 py-2.5 rounded-2xl text-xs font-bold transition-all bg-white text-slate-700 border border-emerald-200 hover:bg-emerald-50" data-filter="JUNIOR">Junior (VI–X)</button>
+        </div>
+      </div>
+
+      <!-- Committee Cards Grid with 4K Floating Elements -->
+      <div id="committee-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WAVY DIVIDER TO REWARDS ================= -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C200,80 450,20 600,60 C750,100 1000,10 1200,50 L1200,120 L0,120 Z" fill="#022c22"></path>
+    </svg>
+  </div>
+
+  <!-- ================= RECOGNITION & PRIZES SECTION (4K DARK FLOATING CARDS) ================= -->
+  <section class="bg-forest-950 text-white py-20 relative z-10 -mt-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-900/90 text-emerald-300 text-xs font-black uppercase tracking-wider border border-emerald-700">
+          <i data-lucide="trophy" class="w-3.5 h-3.5 text-gold-400"></i> Recognition & Rewards
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-white mt-3">
+          Celebrating Excellence Across All Chambers
+        </h2>
+        <p class="text-sm sm:text-base text-emerald-200 mt-2">
+          Substantial cash prizes, prestigious mementos, and national recognition for meritorious delegates.
+        </p>
+      </div>
+
+      <!-- Uniform Prize Matrix per Committee (4K Floating Container) -->
+      <div class="max-w-4xl mx-auto float-card-dark-4k rounded-[32px] p-6 sm:p-9 mb-12">
+        <div class="flex items-center justify-between border-b border-emerald-800/80 pb-4 mb-6">
+          <div>
+            <h3 class="font-cinzel text-xl font-bold text-white">Award Pool Breakdown</h3>
+            <p class="text-xs text-emerald-300">Awarded independently across each of the 8 committees</p>
+          </div>
+          <span class="px-4 py-1.5 rounded-full bg-gold-500/20 text-gold-400 border border-gold-500/40 font-bold text-sm">
+            ₹20,000 / Committee
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          
+          <div class="float-card-dark-4k p-4 rounded-2xl">
+            <span class="text-2xl sm:text-3xl block mb-1">🥇</span>
+            <h4 class="text-xs uppercase font-extrabold text-emerald-200">Best Delegate / Speaker</h4>
+            <p class="font-cinzel text-2xl font-black text-gold-400 mt-2">₹10,000</p>
+            <p class="text-[10px] text-slate-300 mt-1">Trophy + Memento + Certificate</p>
+          </div>
+
+          <div class="float-card-dark-4k p-4 rounded-2xl">
+            <span class="text-2xl sm:text-3xl block mb-1">🥈</span>
+            <h4 class="text-xs uppercase font-extrabold text-emerald-200">High Commendation</h4>
+            <p class="font-cinzel text-2xl font-black text-emerald-300 mt-2">₹6,000</p>
+            <p class="text-[10px] text-slate-300 mt-1">Memento + Certificate</p>
+          </div>
+
+          <div class="float-card-dark-4k p-4 rounded-2xl">
+            <span class="text-2xl sm:text-3xl block mb-1">🥉</span>
+            <h4 class="text-xs uppercase font-extrabold text-emerald-200">Special Mention</h4>
+            <p class="font-cinzel text-2xl font-black text-emerald-300 mt-2">₹3,000</p>
+            <p class="text-[10px] text-slate-300 mt-1">Certificate of Merit</p>
+          </div>
+
+          <div class="float-card-dark-4k p-4 rounded-2xl">
+            <span class="text-2xl sm:text-3xl block mb-1">🎖️</span>
+            <h4 class="text-xs uppercase font-extrabold text-emerald-200">Honourable Mention</h4>
+            <p class="font-cinzel text-2xl font-black text-emerald-300 mt-2">₹1,000</p>
+            <p class="text-[10px] text-slate-300 mt-1">Certificate of Merit</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Additional 4K Floating Perks Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="flex items-start gap-3.5 p-5 rounded-3xl float-card-dark-4k">
+          <i data-lucide="package-check" class="w-6 h-6 text-emerald-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-sm font-bold text-white">Exclusive Delegate Kit</h4>
+            <p class="text-xs text-emerald-200 mt-1">Curated folder, delegate badge, pen, handbook, and committee study dossier.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5 p-5 rounded-3xl float-card-dark-4k">
+          <i data-lucide="scroll" class="w-6 h-6 text-emerald-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-sm font-bold text-white">Verified Certificates</h4>
+            <p class="text-xs text-emerald-200 mt-1">Authentic institutional certificates of participation for all registered delegates.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5 p-5 rounded-3xl float-card-dark-4k">
+          <i data-lucide="utensils" class="w-6 h-6 text-emerald-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-sm font-bold text-white">Conclave Hospitality</h4>
+            <p class="text-xs text-emerald-200 mt-1">Buffet working lunch, morning high tea, snacks, and delegate social caucus on both days.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5 p-5 rounded-3xl float-card-dark-4k">
+          <i data-lucide="users-2" class="w-6 h-6 text-emerald-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-sm font-bold text-white">National Networking</h4>
+            <p class="text-xs text-emerald-200 mt-1">Connect with 700+ student leaders, debaters, and educators from prestigious institutions.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WAVY DIVIDER TO SCHEDULE ================= -->
+  <div class="wave-divider rotate-180">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C200,80 450,20 600,60 C750,100 1000,10 1200,50 L1200,120 L0,120 Z" fill="#022c22"></path>
+    </svg>
+  </div>
+
+  <!-- ================= 2-DAY CONFERENCE ITINERARY (4K FLOATING CARDS) ================= -->
+  <section id="schedule" class="py-20 bg-emerald-50/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-black uppercase tracking-wider border border-emerald-300">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-emerald-700"></i> Event Schedule
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-forest-950 mt-3">
+          Two Days of Parliamentary Rhythm
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          From the opening gavel to the valedictory awards ceremony.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Day 1 4K Floating Card -->
+        <div class="float-card-4k rounded-[32px] p-6 sm:p-8">
+          <div class="flex items-center justify-between border-b border-emerald-100 pb-4 mb-6">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-700">Saturday · 23 January 2027</span>
+              <h3 class="font-cinzel text-2xl font-bold text-forest-950">Day 1: Debate. Discuss. Draft.</h3>
+            </div>
+            <span class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-900 flex items-center justify-center font-black text-sm border border-emerald-300">
+              01
+            </span>
+          </div>
+
+          <div class="space-y-4">
+            
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">08:00 – 09:30 AM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Delegate Check-in & Kit Distribution</h4>
+                <p class="text-xs text-slate-600">Verification of badges, credential kits, placards, and orientation dossier.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">09:30 – 10:45 AM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Inaugural Ceremony & Keynote Address</h4>
+                <p class="text-xs text-slate-600">Lighting of the lamp, address by Sunbeam Leadership, and introduction of EB.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">11:00 AM – 01:30 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Committee Session I (Roll Call & GSL)</h4>
+                <p class="text-xs text-slate-600">Opening statements, establishment of quorum, and primary agenda deliberations.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 shadow-sm">
+              <span class="font-bold text-xs text-emerald-800 w-24 shrink-0 mt-0.5">01:30 – 02:30 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-emerald-950">Delegate Networking Lunch</h4>
+                <p class="text-xs text-emerald-800">Catered multicourse working lunch on campus grounds.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">02:30 – 05:00 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Committee Session II (Moderated Caucus)</h4>
+                <p class="text-xs text-slate-600">Sub-topic debates, motion rounds, working paper preparation & lobbying.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">05:00 – 05:45 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">High Tea & Press Communiqué</h4>
+                <p class="text-xs text-slate-600">Day 1 proceedings wrap-up and publication of IIP daily bulletin.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Day 2 4K Floating Card -->
+        <div class="float-card-4k rounded-[32px] p-6 sm:p-8">
+          <div class="flex items-center justify-between border-b border-emerald-100 pb-4 mb-6">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-700">Sunday · 24 January 2027</span>
+              <h3 class="font-cinzel text-2xl font-bold text-forest-950">Day 2: Deliberate. Decide. Deliver.</h3>
+            </div>
+            <span class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-900 flex items-center justify-center font-black text-sm border border-emerald-300">
+              02
+            </span>
+          </div>
+
+          <div class="space-y-4">
+            
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">09:00 – 11:30 AM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Committee Session III (Draft Resolutions & Bills)</h4>
+                <p class="text-xs text-slate-600">Tabling of Draft Resolutions, Clause-by-Clause consideration, and amendments.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">11:45 AM – 01:15 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Crisis Simulation & Emergency Debates</h4>
+                <p class="text-xs text-slate-600">Sudden geopolitical updates, press conferences, and fast-track cabinet actions.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 shadow-sm">
+              <span class="font-bold text-xs text-emerald-800 w-24 shrink-0 mt-0.5">01:15 – 02:15 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-emerald-950">Lunch & Caucus</h4>
+                <p class="text-xs text-emerald-800">Final voting coalition meetings and delegate social interactions.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">02:15 – 03:45 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Committee Session IV (Final Voting & Passing)</h4>
+                <p class="text-xs text-slate-600">Voting procedures on final legislative bills and UN draft resolutions.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 p-3.5 rounded-2xl bg-white border border-emerald-100/80 shadow-sm">
+              <span class="font-bold text-xs text-forest-900 w-24 shrink-0 mt-0.5">04:15 – 06:00 PM</span>
+              <div>
+                <h4 class="text-sm font-bold text-forest-950">Grand Valedictory & Awards Ceremony</h4>
+                <p class="text-xs text-slate-600">Announcement of ₹1,60,000 cash prizes, trophy presentation, and closing gavel.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ADVISORY BOARD & LEADERSHIP (4K FLOATING PORTRAITS) ================= -->
+  <section id="advisory" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-black uppercase tracking-wider border border-emerald-300">
+          <i data-lucide="crown" class="w-3.5 h-3.5 text-emerald-700"></i> Patronage & Leadership
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-forest-950 mt-3">
+          Advisory Committee
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Guiding Sunbeam Samanvay with visionary stewardship and academic excellence.
+        </p>
+      </div>
+
+      <!-- 3 Key Advisors with 4K Floating Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Advisor 1: Mr. Rohan Madhok -->
+        <div class="float-card-4k rounded-[32px] p-7 text-center group">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-gold-500 via-emerald-500 to-forest-900 shadow-xl mb-5 group-hover:scale-105 transition-transform">
+            <img src="./assets/rohan_madhok.jpg" alt="Mr. Rohan Madhok" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <span class="text-[10px] font-black uppercase px-3 py-1 rounded-full bg-emerald-100 text-emerald-950 tracking-wider border border-emerald-300">Chief Executive Officer</span>
+          <h3 class="font-cinzel text-xl font-bold text-forest-950 mt-3">Mr. Rohan Madhok</h3>
+          <p class="text-xs text-emerald-800 font-bold mb-3">CEO, Sunbeam Academy Samneghat</p>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            With a commitment to educational excellence, he nurtures young minds through knowledge, values, and innovation, emphasizing holistic development, intellectual curiosity, and responsible citizenship.
+          </p>
+        </div>
+
+        <!-- Advisor 2: Mrs. Shashwati Sharma -->
+        <div class="float-card-4k rounded-[32px] p-7 text-center group">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-gold-500 via-emerald-500 to-forest-900 shadow-xl mb-5 group-hover:scale-105 transition-transform">
+            <img src="./assets/shashwati_sharma.jpg" alt="Mrs. Shashwati Sharma" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <span class="text-[10px] font-black uppercase px-3 py-1 rounded-full bg-emerald-100 text-emerald-950 tracking-wider border border-emerald-300">Principal</span>
+          <h3 class="font-cinzel text-xl font-bold text-forest-950 mt-3">Mrs. Shashwati Sharma</h3>
+          <p class="text-xs text-emerald-800 font-bold mb-3">Principal, Sunbeam Academy Samneghat</p>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            Accomplished educational leader and administrator with specialization in biotechnology. Champion of competency-based pedagogy aligned with NEP 2020, fostering global citizenship and critical thinking.
+          </p>
+        </div>
+
+        <!-- Advisor 3: Miss Pratiksha Shahi -->
+        <div class="float-card-4k rounded-[32px] p-7 text-center group">
+          <div class="w-32 h-32 mx-auto rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-gold-500 via-emerald-500 to-forest-900 shadow-xl mb-5 group-hover:scale-105 transition-transform">
+            <img src="./assets/pratiksha_shahi.jpg" alt="Miss Pratiksha Shahi" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <span class="text-[10px] font-black uppercase px-3 py-1 rounded-full bg-emerald-100 text-emerald-950 tracking-wider border border-emerald-300">Chief Advisor</span>
+          <h3 class="font-cinzel text-xl font-bold text-forest-950 mt-3">Miss Pratiksha Shahi</h3>
+          <p class="text-xs text-emerald-800 font-bold mb-3">Graduate, Banaras Hindu University (BHU)</p>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            Distinguished BHU alumna, two-time State Gold Medalist in English & Hindi debates. Represented district in UP Legislative Assembly, Leader of Opposition in Chandigarh Vidhan Sabha, Founder of Vasant Vaani Sansad.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Core Committee / Secretariat Leadership (4K Floating Dark Card) -->
+      <div class="float-card-dark-4k text-white rounded-[36px] p-8 sm:p-10 shadow-2xl">
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <span class="text-xs uppercase tracking-widest text-emerald-300 font-black">Executive Organizers</span>
+          <h3 class="font-cinzel text-2xl font-bold text-white mt-1">Core Committee</h3>
+          <p class="text-xs text-emerald-200 mt-1">Driving the vision and ground operations of Sunbeam Samanvay 1.0</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          
+          <div class="p-6 rounded-2xl float-card-dark-4k">
+            <div class="w-12 h-12 mx-auto rounded-2xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-lg mb-3 border border-emerald-400/40">
+              <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-cinzel text-lg font-bold text-white">Ashwani Kumar Mishra</h4>
+            <p class="text-xs font-bold text-gold-400 mt-1">Founder & Convenor</p>
+          </div>
+
+          <div class="p-6 rounded-2xl float-card-dark-4k">
+            <div class="w-12 h-12 mx-auto rounded-2xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-lg mb-3 border border-emerald-400/40">
+              <i data-lucide="user-plus" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-cinzel text-lg font-bold text-white">Stuti Singh</h4>
+            <p class="text-xs font-bold text-gold-400 mt-1">Co-Founder & Delegate Affairs</p>
+          </div>
+
+          <div class="p-6 rounded-2xl float-card-dark-4k">
+            <div class="w-12 h-12 mx-auto rounded-2xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-lg mb-3 border border-emerald-400/40">
+              <i data-lucide="user-plus" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-cinzel text-lg font-bold text-white">Udita Singh</h4>
+            <p class="text-xs font-bold text-gold-400 mt-1">Co-Founder & Logistics Head</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PHOTO GALLERY & LIGHTBOX (4K FLOATING ELEMENTS) ================= -->
+  <section id="gallery" class="py-20 bg-forest-50/50 border-t border-emerald-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-black uppercase tracking-wider border border-emerald-300">
+            <i data-lucide="camera" class="w-3.5 h-3.5 text-emerald-700"></i> Conclave Visuals
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-forest-950 mt-3">
+            Moments in Session
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-xl">
+            Floor debates, placard raises, crisis negotiations, and campus deliberations.
+          </p>
+        </div>
+
+        <!-- 4K Filter tabs for gallery -->
+        <div class="flex flex-wrap items-center gap-2.5 mt-4 md:mt-0">
+          <button onclick="filterGallery('ALL')" class="gallery-btn px-4 py-2 rounded-2xl text-xs font-bold bg-forest-900 text-white shadow-md" data-cat="ALL">All Photos</button>
+          <button onclick="filterGallery('DEBATE')" class="gallery-btn px-4 py-2 rounded-2xl text-xs font-bold bg-white text-slate-700 border border-emerald-200" data-cat="DEBATE">Parliament</button>
+          <button onclick="filterGallery('MUN')" class="gallery-btn px-4 py-2 rounded-2xl text-xs font-bold bg-white text-slate-700 border border-emerald-200" data-cat="MUN">Model UN</button>
+          <button onclick="filterGallery('CAMPUS')" class="gallery-btn px-4 py-2 rounded-2xl text-xs font-bold bg-white text-slate-700 border border-emerald-200" data-cat="CAMPUS">Campus & Host</button>
+        </div>
+      </div>
+
+      <!-- 4K Gallery Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BROCHURE DOWNLOAD SECTION ================= -->
+  <section id="brochure" class="py-20 bg-white relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="float-card-dark-4k rounded-[36px] p-8 sm:p-12 text-white relative overflow-hidden">
+        <div class="glow-orb-emerald -right-20 -bottom-20 w-80 h-80 opacity-20"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <span class="px-4 py-1.5 rounded-full text-xs font-black bg-emerald-400/20 text-emerald-300 border border-emerald-400/30 uppercase tracking-widest">
+              Official Documentation
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-white">
+              Download Sunbeam Samanvay 1.0 Event Brochure
+            </h2>
+            <p class="text-sm sm:text-base text-emerald-100/90 leading-relaxed font-normal">
+              Explore the complete 13-page institutional dossier detailing all committee agendas, rules of procedure, study guides, code of conduct, and delegate registration criteria.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-3">
+              <a href="./assets/Sunbeam-Samanvay-Brochure.pdf" target="_blank" class="px-8 py-4 rounded-2xl bg-white text-forest-950 hover:bg-emerald-50 font-black text-sm shadow-xl hover:shadow-2xl transition-all flex items-center gap-2.5">
+                <i data-lucide="file-down" class="w-5 h-5 text-emerald-700"></i>
+                <span>Download Brochure (PDF · 10.9 MB)</span>
+              </a>
+              <a href="#register" class="px-7 py-4 rounded-2xl bg-emerald-600/60 hover:bg-emerald-600 text-white font-bold text-sm border border-emerald-400/40 transition-all flex items-center gap-2">
+                <span>Register Now</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-emerald-200"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 text-center">
+            <div class="inline-block p-4 rounded-3xl float-card-dark-4k rotate-2 hover:rotate-0 transition-transform">
+              <div class="w-48 h-64 bg-forest-900 rounded-2xl overflow-hidden relative shadow-inner flex flex-col justify-between p-4 text-left border border-emerald-400/30">
+                <div class="flex justify-between items-start">
+                  <span class="text-[9px] font-bold text-emerald-300 uppercase">OFFICIAL DOSSIER</span>
+                  <i data-lucide="book" class="w-4 h-4 text-gold-400"></i>
+                </div>
+                <div>
+                  <h4 class="font-cinzel text-sm font-bold text-white">THE SAMANVAY MUN & YP</h4>
+                  <p class="text-[10px] text-emerald-200">Sunbeam Samanvay 1.0</p>
+                </div>
+                <div class="border-t border-emerald-700/60 pt-2 flex justify-between items-center text-[9px] text-slate-300">
+                  <span>13 Pages</span>
+                  <span>Jan 2027</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WAVY DIVIDER TO REGISTER NOW ELEMENT ================= -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C300,90 500,-20 700,70 C900,160 1100,20 1200,60 L1200,120 L0,120 Z" fill="#f0fdf4"></path>
+    </svg>
+  </div>
+
+  <!-- ================= 4K FLOATING "REGISTER NOW" CENTERPIECE ELEMENT ================= -->
+  <!-- Note: Replaced large inline form with high-impact 4K floating element as requested -->
+  <section id="register" class="py-24 bg-forest-50 relative overflow-hidden">
+    
+    <!-- 4K Glowing Ambient Lights -->
+    <div class="glow-orb-emerald top-10 left-1/4 w-[34rem] h-[34rem] opacity-30"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Pill -->
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-200 text-emerald-950 text-xs font-black uppercase tracking-wider border border-emerald-300">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-800"></i> Registration & Passes
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-cinzel font-black text-forest-950 mt-3">
+          REGISTER NOW
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-2">
+          Claim your priority seat across the 8 prestigious chambers for Sunbeam Samanvay 1.0. Early Bird slots are strictly limited.
+        </p>
+      </div>
+
+      <!-- Main 4K Floating Showcase Card -->
+      <div class="float-card-4k rounded-[40px] p-8 sm:p-12 shadow-2xl relative overflow-hidden border border-white">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left Column: Pricing, Perks & Direct Action Button -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 font-extrabold text-xs uppercase tracking-wider border border-emerald-300">
+                Early Bird Active
+              </span>
+              <span class="px-3.5 py-1 rounded-full bg-gold-100 text-gold-900 font-extrabold text-xs uppercase tracking-wider border border-gold-300">
+                ₹1.6L Prize Pool
+              </span>
+            </div>
+
+            <div>
+              <div class="flex items-baseline gap-3">
+                <span class="font-cinzel text-5xl sm:text-6xl font-black text-forest-950">₹999</span>
+                <span class="text-lg text-slate-400 line-through font-semibold">₹1,199</span>
+                <span class="text-xs font-bold text-emerald-700 bg-emerald-100/80 px-2.5 py-1 rounded-lg">Save ₹200</span>
+              </div>
+              <p class="text-xs text-slate-500 font-medium mt-1">Per Delegate Pass · All inclusive of 2-Day delegate kit, food & certification</p>
+            </div>
+
+            <!-- Bullet perks -->
+            <div class="space-y-3 pt-2 text-xs sm:text-sm text-slate-700 font-semibold">
+              <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="check" class="w-4 h-4"></i>
+                </div>
+                <span>Full access to 1 of 8 committees with official study guide</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="check" class="w-4 h-4"></i>
+                </div>
+                <span>Exclusive Delegate Kit, official placards & handbook</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="check" class="w-4 h-4"></i>
+                </div>
+                <span>2-Day working buffet lunch, morning high tea & snacks</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                  <i data-lucide="check" class="w-4 h-4"></i>
+                </div>
+                <span>Eligibility for ₹1,60,000 cash prizes & national certificates</span>
+              </div>
+            </div>
+
+            <!-- Prominent Floating Register Button & Quick Actions -->
+            <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <button onclick="openRegisterModal()" class="shimmer-btn px-9 py-4 rounded-2xl text-white font-cinzel font-black text-base shadow-xl shadow-emerald-900/30 hover:scale-105 transition-all flex items-center justify-center gap-2.5 border border-emerald-400/40">
+                <i data-lucide="sparkles" class="w-5 h-5 text-emerald-200"></i>
+                <span>REGISTER NOW</span>
+              </button>
+              
+              <a href="https://forms.gle/8sYZps7jFdyp92YB6" target="_blank" class="px-6 py-4 rounded-2xl bg-white hover:bg-emerald-50 text-forest-950 font-bold text-xs border border-emerald-300 shadow-sm transition-all flex items-center justify-center gap-2">
+                <i data-lucide="external-link" class="w-4 h-4 text-emerald-700"></i>
+                <span>Open Google Form</span>
+              </a>
+            </div>
+
+            <p class="text-[11px] text-slate-500">
+              Need assistance or institutional bulk passes? Call <strong>+91 73938 24401</strong>
+            </p>
+
+          </div>
+
+          <!-- Right Column: Official UPI Payment QR Code Card -->
+          <div class="lg:col-span-5 text-center">
+            <div class="float-card-4k p-6 rounded-3xl inline-block max-w-sm w-full bg-white/95">
+              <span class="text-[10px] font-black uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300">
+                Official Scan & Pay
+              </span>
+
+              <div class="p-2.5 bg-white rounded-2xl shadow-inner border border-emerald-200 mt-4 mb-3">
+                <img src="./assets/upi_qr.jpg" alt="Official UPI QR Code" class="w-52 h-52 object-contain mx-auto rounded-xl" />
+              </div>
+
+              <div class="p-3 rounded-xl bg-forest-50 border border-emerald-200 text-left mb-3">
+                <span class="text-[10px] font-bold text-slate-500 uppercase block">Official UPI ID</span>
+                <div class="flex items-center justify-between mt-0.5">
+                  <span class="font-mono font-bold text-forest-950 text-xs">stuti34@ptyes</span>
+                  <button type="button" onclick="copyUpi()" class="text-[10px] font-bold text-emerald-800 bg-emerald-200/80 px-2 py-0.5 rounded">
+                    <span id="copy-btn-text">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <button onclick="openRegisterModal()" class="w-full py-3 rounded-xl bg-forest-900 text-white font-bold text-xs hover:bg-forest-950 transition-all flex items-center justify-center gap-2 shadow-md">
+                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-300"></i>
+                <span>Register with UPI & Google Form</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 4K POPUP "REGISTER NOW" FAST-PASS MODAL ================= -->
+  <!-- Pure 4K floating modal without bulky forms - direct, sleek & instant -->
+  <div id="register-modal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="float-card-4k rounded-[36px] max-w-xl w-full overflow-hidden bg-white shadow-2xl border border-white animate-float-mid">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-forest-950 via-forest-900 to-emerald-900 text-white p-6 sm:p-7 flex items-center justify-between relative overflow-hidden">
+        <div class="glow-orb-emerald -top-10 -left-10 w-40 h-40 opacity-40"></div>
+        <div class="flex items-center gap-3.5 relative z-10">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-gold-500 to-emerald-400 flex items-center justify-center text-forest-950 shadow-lg font-black">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/40">Early Bird Pass</span>
+              <span class="text-[10px] font-black uppercase text-gold-300">₹999 Only</span>
+            </div>
+            <h3 class="font-cinzel text-xl sm:text-2xl font-black text-white">REGISTER NOW</h3>
+            <p class="text-xs text-emerald-200">Sunbeam Samanvay 1.0 · Ace One Conclave</p>
+          </div>
+        </div>
+        <button onclick="closeRegisterModal()" class="text-slate-300 hover:text-white p-2 rounded-2xl hover:bg-white/10 transition-colors relative z-10">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body (4K Floating Elements) -->
+      <div class="p-6 sm:p-8 space-y-6">
+        
+        <!-- Selected Committee Indicator -->
+        <div class="p-4 rounded-2xl bg-emerald-50/90 border border-emerald-200 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-xl bg-forest-900 text-emerald-300 flex items-center justify-center">
+              <i data-lucide="landmark" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase font-bold text-slate-500 block">Selected Chamber</span>
+              <span id="modal-comm-name" class="font-cinzel font-bold text-sm text-forest-950">General Delegate Admission (All 8 Chambers)</span>
+            </div>
+          </div>
+          <span class="text-xs font-black text-gold-600 bg-gold-50 px-2.5 py-1 rounded-full border border-gold-200">
+            ₹1.6L Prizes
+          </span>
+        </div>
+
+        <!-- 2-Step Quick Registration Flow -->
+        <div class="space-y-4">
+          
+          <!-- Step 1: Payment via UPI -->
+          <div class="float-card-4k p-5 rounded-2xl bg-white border border-emerald-100 flex flex-col sm:flex-row items-center gap-5">
+            <div class="w-28 h-28 shrink-0 bg-white p-1.5 rounded-xl border border-emerald-200 shadow-sm">
+              <img src="./assets/upi_qr.jpg" alt="UPI QR Code" class="w-full h-full object-contain" />
+            </div>
+            <div class="space-y-2 text-center sm:text-left flex-1">
+              <span class="text-[10px] font-black uppercase text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full inline-block">
+                Step 1 · Pay Registration Fee
+              </span>
+              <div class="flex items-baseline justify-center sm:justify-start gap-2">
+                <span class="font-cinzel text-2xl font-black text-forest-950">₹999</span>
+                <span class="text-xs text-slate-400 line-through">₹1,199</span>
+                <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Save ₹200</span>
+              </div>
+              <div class="p-2 rounded-xl bg-forest-50 border border-emerald-200 flex items-center justify-between text-xs">
+                <span class="font-mono font-bold text-forest-950 text-[11px]">stuti34@ptyes</span>
+                <button type="button" onclick="copyUpi()" class="text-[10px] font-bold text-emerald-900 bg-emerald-200 hover:bg-emerald-300 px-2.5 py-1 rounded-lg transition-colors">
+                  <span id="modal-copy-text">Copy UPI</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Open Google Form -->
+          <div class="space-y-3">
+            <span class="text-[10px] font-black uppercase text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full inline-block">
+              Step 2 · Submit Delegate Details
+            </span>
+
+            <a href="https://forms.gle/8sYZps7jFdyp92YB6" target="_blank" class="shimmer-btn w-full py-4 rounded-2xl text-white font-cinzel font-black text-sm shadow-xl flex items-center justify-center gap-2.5 hover:scale-[1.02] transition-all border border-emerald-300/40">
+              <i data-lucide="external-link" class="w-5 h-5 text-emerald-200"></i>
+              <span>COMPLETE REGISTRATION ON GOOGLE FORM</span>
+            </a>
+
+            <div class="grid grid-cols-2 gap-3 pt-1">
+              <a href="https://wa.me/917393824401?text=Hello%20Secretariat%2C%20I%20want%20to%20register%20for%20Sunbeam%20Samanvay%201.0" target="_blank" class="p-3 rounded-2xl bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 text-forest-950 text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-700"></i>
+                <span>WhatsApp Desk</span>
+              </a>
+              <a href="tel:+917393824401" class="p-3 rounded-2xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+                <i data-lucide="phone" class="w-4 h-4 text-emerald-700"></i>
+                <span>+91 73938 24401</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= TICKET CONFIRMATION MODAL ================= -->
+  <div id="ticket-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="float-card-4k rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-emerald-200 animate-float-mid bg-white">
+      
+      <!-- Ticket Header -->
+      <div class="bg-forest-950 text-white p-6 relative">
+        <button onclick="closeTicketModal()" class="absolute top-4 right-4 text-emerald-200 hover:text-white p-1 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-md">
+            <i data-lucide="ticket" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-cinzel text-lg font-bold text-white">Delegate Credential Confirmed</h3>
+            <p class="text-xs text-emerald-300">Sunbeam Samanvay 1.0 · Ace One Conclave</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Body -->
+      <div class="p-6 space-y-4">
+        <div class="p-4 rounded-2xl bg-forest-50 border border-emerald-200 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-slate-500 block">Official Ticket ID</span>
+            <span id="ticket-code" class="font-cinzel font-bold text-xl text-forest-950">SAM-2027-XXXX</span>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">
+            ✓ Confirmed
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase block font-semibold">Delegate Name</span>
+            <span id="ticket-name" class="font-bold text-slate-800 text-sm">--</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase block font-semibold">Allocated Committee</span>
+            <span id="ticket-comm" class="font-bold text-emerald-800 text-sm">--</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase block font-semibold">Event Dates</span>
+            <span class="font-bold text-slate-800">23–24 January 2027</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-[10px] text-slate-500 uppercase block font-semibold">Venue</span>
+            <span class="font-bold text-slate-800">Sunbeam Samneghat</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-emerald-100/60 text-emerald-900 text-xs font-medium flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+          <span>Present this digital pass at the registration desk on Day 1 to collect your official kit and delegate badge.</span>
+        </div>
+
+        <div class="pt-2 flex gap-3">
+          <button onclick="window.print()" class="flex-1 py-3 rounded-xl bg-forest-900 text-white font-bold text-xs hover:bg-forest-950 flex items-center justify-center gap-1.5">
+            <i data-lucide="printer" class="w-4 h-4"></i> Print Pass
+          </button>
+          <button onclick="closeTicketModal()" class="flex-1 py-3 rounded-xl bg-emerald-50 text-emerald-900 font-bold text-xs hover:bg-emerald-100 border border-emerald-200">
+            Done
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= COMMITTEE DETAILS MODAL ================= -->
+  <div id="committee-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="float-card-4k rounded-[36px] max-w-2xl w-full max-h-[90vh] overflow-y-auto bg-white shadow-2xl border border-white">
+      <div id="committee-modal-content" class="p-6 sm:p-8 space-y-6">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= GALLERY LIGHTBOX MODAL ================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-emerald-400 p-2 rounded-full bg-white/10">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <div class="max-w-4xl max-h-[85vh] text-center">
+      <img id="lightbox-img" src="" alt="Gallery Preview" class="max-w-full max-h-[75vh] mx-auto rounded-2xl shadow-2xl object-contain border border-white/20" />
+      <p id="lightbox-caption" class="text-white font-serif italic text-lg mt-4"></p>
+    </div>
+  </div>
+
+  <!-- ================= ADMIN PORTAL MODAL ================= -->
+  <div id="admin-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="float-card-4k rounded-[36px] max-w-5xl w-full max-h-[90vh] overflow-y-auto bg-white shadow-2xl border border-white">
+      
+      <!-- Admin Header -->
+      <div class="bg-forest-950 text-white p-6 flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-md">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-cinzel text-xl font-bold">Secretariat Administration Portal</h3>
+            <p class="text-xs text-emerald-300">Live Delegate Registry & Financial Verification</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="/api/admin/export" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1.5 transition-all">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Export CSV
+          </a>
+          <button onclick="closeAdminModal()" class="text-slate-400 hover:text-white p-1 rounded-lg">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Admin Content -->
+      <div class="p-6 space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="p-4 rounded-2xl float-card-4k">
+            <span class="text-xs text-slate-500 font-bold uppercase">Total Registrations</span>
+            <p id="admin-total-reg" class="font-cinzel text-3xl font-black text-forest-950 mt-1">--</p>
+          </div>
+          <div class="p-4 rounded-2xl float-card-4k">
+            <span class="text-xs text-slate-500 font-bold uppercase">Verified Payments</span>
+            <p id="admin-verified-reg" class="font-cinzel text-3xl font-black text-emerald-700 mt-1">--</p>
+          </div>
+          <div class="p-4 rounded-2xl float-card-4k">
+            <span class="text-xs text-slate-500 font-bold uppercase">Revenue Collected</span>
+            <p id="admin-revenue" class="font-cinzel text-3xl font-black text-gold-500 mt-1">₹0</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input type="text" id="admin-search-input" oninput="loadAdminRegistrations()" placeholder="Search by name, email, institution, or Ticket ID..." class="flex-1 px-4 py-2.5 rounded-xl border border-emerald-200 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+          <select id="admin-comm-filter" onchange="loadAdminRegistrations()" class="px-4 py-2.5 rounded-xl border border-emerald-200 text-xs bg-white">
+            <option value="ALL">All Committees</option>
+            <option value="LOK_SABHA">Lok Sabha</option>
+            <option value="AIPPM">AIPPM</option>
+            <option value="UPLA">UPLA</option>
+            <option value="JANMANCH">Janmanch</option>
+            <option value="UNHRC">UNHRC</option>
+            <option value="UNCSW">UNCSW</option>
+            <option value="UNGA">UNGA</option>
+            <option value="IIP">IIP (Press)</option>
+          </select>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-slate-200">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-forest-900 text-white uppercase text-[10px] tracking-wider">
+              <tr>
+                <th class="px-4 py-3">Ticket ID</th>
+                <th class="px-4 py-3">Delegate</th>
+                <th class="px-4 py-3">Institution</th>
+                <th class="px-4 py-3">Committee</th>
+                <th class="px-4 py-3">UTR #</th>
+                <th class="px-4 py-3">Status</th>
+                <th class="px-4 py-3 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-table-body" class="divide-y divide-slate-100 bg-white">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= CONTACT & VENUE SECTION ================= -->
+  <section id="contact" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Contact Details & Sunbeam Academy Location -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-black uppercase tracking-wider border border-emerald-300">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-700"></i> Secretariat Desk
+          </span>
+
+          <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-forest-950">
+            Connect With The Organising Secretariat
+          </h2>
+
+          <p class="text-sm text-slate-600 leading-relaxed font-normal">
+            Have questions regarding committee allotments, delegation registration from schools/colleges, or outstation accommodations? Our delegate relations team is active 24/7.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl float-card-4k">
+              <i data-lucide="phone-call" class="w-5 h-5 text-emerald-700 mt-1 shrink-0"></i>
+              <div>
+                <p class="text-xs uppercase font-bold text-slate-500">Helpline / WhatsApp</p>
+                <a href="tel:+917393824401" class="text-sm font-bold text-forest-950 hover:text-emerald-700">+91 73938 24401</a>
+                <span class="text-xs text-slate-500 block">Stuti Singh (Co-Founder & Delegate Relations)</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl float-card-4k">
+              <i data-lucide="mail" class="w-5 h-5 text-emerald-700 mt-1 shrink-0"></i>
+              <div>
+                <p class="text-xs uppercase font-bold text-slate-500">Official Correspondence Email</p>
+                <a href="mailto:theonepercentbhu@gmail.com" class="text-sm font-bold text-forest-950 hover:text-emerald-700">theonepercentbhu@gmail.com</a>
+                <span class="text-xs text-slate-500 block">General Secretariat Inquiries</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl float-card-4k">
+              <i data-lucide="map-pin" class="w-5 h-5 text-emerald-700 mt-1 shrink-0"></i>
+              <div>
+                <p class="text-xs uppercase font-bold text-slate-500">Host Venue & Campus</p>
+                <p class="text-sm font-bold text-forest-950">Sunbeam Academy, Samneghat</p>
+                <p class="text-xs text-slate-600">Samneghat Road, Nagwa, Varanasi, Uttar Pradesh - 221005</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: 4K Floating Interactive Message Form -->
+        <div class="lg:col-span-7">
+          <div class="float-card-4k p-8 rounded-[36px]">
+            <h3 class="font-cinzel text-2xl font-bold text-forest-950 mb-2">Send an Official Inquiry</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-6">Our secretariat will reply via email and WhatsApp within 24 hours.</p>
+
+            <form onsubmit="handleContact(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+                  <input type="text" id="contact-name" required placeholder="Aryan Sharma" class="w-full px-4 py-2.5 rounded-xl border border-emerald-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-white" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
+                  <input type="email" id="contact-email" required placeholder="aryan@gmail.com" class="w-full px-4 py-2.5 rounded-xl border border-emerald-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-white" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Subject *</label>
+                <input type="text" id="contact-subject" required placeholder="Institutional Delegation Inquiry / Accommodation Request" class="w-full px-4 py-2.5 rounded-xl border border-emerald-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-white" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Message *</label>
+                <textarea id="contact-message" rows="4" required placeholder="Write your inquiry here..." class="w-full px-4 py-2.5 rounded-xl border border-emerald-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-white"></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="w-full py-3.5 rounded-xl bg-forest-900 hover:bg-forest-950 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Submit Query to Secretariat</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-forest-950 text-white pt-16 pb-12 border-t border-emerald-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-emerald-900/60">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white">
+              <i data-lucide="award" class="w-6 h-6 text-emerald-200"></i>
+            </div>
+            <div>
+              <span class="font-cinzel text-xl font-bold tracking-tight text-white">SUNBEAM SAMANVAY 1.0</span>
+              <p class="text-[11px] font-semibold text-emerald-400 uppercase tracking-widest">Ace One National Conclave</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
+            The annual Youth Parliament and Model United Nations conference hosted by Sunbeam Academy, Samneghat, Varanasi. Dedicated to intellectual rigor, democratic diplomacy, and visionary leadership.
+          </p>
+          <p class="text-xs text-gold-400 font-serif italic">
+            &ldquo;Disagreement is where dialogue begins.&rdquo;
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-cinzel text-xs font-bold uppercase tracking-wider text-emerald-300">Navigation</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li><a href="#about" class="hover:text-emerald-300 transition-colors">About Conclave</a></li>
+            <li><a href="#forums" class="hover:text-emerald-300 transition-colors">Parliament & MUN</a></li>
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">8 Committees & Agendas</a></li>
+            <li><a href="#schedule" class="hover:text-emerald-300 transition-colors">2-Day Schedule</a></li>
+            <li><a href="#advisory" class="hover:text-emerald-300 transition-colors">Advisory Board</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Committees -->
+        <div class="space-y-3">
+          <h4 class="font-cinzel text-xs font-bold uppercase tracking-wider text-emerald-300">Chambers</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">Lok Sabha</a></li>
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">AIPPM</a></li>
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">UPLA</a></li>
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">Janmanch (VI–X)</a></li>
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">UNHRC & UNGA</a></li>
+            <li><a href="#committees" class="hover:text-emerald-300 transition-colors">UNCSW & IIP</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Venue -->
+        <div class="space-y-3">
+          <h4 class="font-cinzel text-xs font-bold uppercase tracking-wider text-emerald-300">Headquarters</h4>
+          <p class="text-xs text-slate-300">
+            Sunbeam Academy, Samneghat<br />
+            Varanasi, Uttar Pradesh - 221005
+          </p>
+          <p class="text-xs text-emerald-400 font-mono">
+            +91 73938 24401
+          </p>
+          <a href="./assets/Sunbeam-Samanvay-Brochure.pdf" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-gold-400 hover:text-white font-bold transition-colors">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Brochure
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>© 2026–2027 Sunbeam Samanvay 1.0 (Ace One). All rights reserved.</p>
+        <p class="flex items-center gap-1 text-emerald-300">
+          Crafted with <i data-lucide="heart" class="w-3.5 h-3.5 text-red-500 fill-red-500"></i> for national youth leadership
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= PERSISTENT 4K FLOATING QUICK ACTION DOCK ================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex items-center gap-3">
+    <a href="https://wa.me/917393824401?text=Hello%20Secretariat%2C%20I%20have%20a%20query%20about%20Sunbeam%20Samanvay%201.0" target="_blank" class="w-12 h-12 rounded-full float-card-4k bg-white text-emerald-800 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform border border-emerald-200" title="WhatsApp Secretariat Helpdesk">
+      <i data-lucide="message-circle" class="w-6 h-6 text-emerald-600"></i>
+    </a>
+    <button onclick="openRegisterModal()" class="shimmer-btn px-6 py-3.5 rounded-full text-white font-cinzel font-black text-xs md:text-sm shadow-2xl flex items-center gap-2 hover:scale-105 transition-all border border-emerald-300/50 float-card-dark-4k">
+      <i data-lucide="sparkles" class="w-4 h-4 text-emerald-300 animate-pulse"></i>
+      <span>REGISTER NOW</span>
+    </button>
+  </div>
+
+  <!-- ================= CLIENT JAVASCRIPT APP LOGIC ================= -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // ----------------- Dynamic Canvas Wave Flow -----------------
+    const canvas = document.getElementById('waveCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, step = 0;
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight * 0.95;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function drawWaves() {
+      ctx.clearRect(0, 0, width, height);
+      step += 0.012;
+
+      const waves = [
+        { color: 'rgba(16, 185, 129, 0.14)', length: 0.003, amplitude: 50, speed: step * 0.8 },
+        { color: 'rgba(5, 150, 105, 0.10)', length: 0.005, amplitude: 38, speed: -step * 0.6 },
+        { color: 'rgba(6, 78, 59, 0.07)', length: 0.002, amplitude: 60, speed: step * 0.4 }
+      ];
+
+      waves.forEach(w => {
+        ctx.beginPath();
+        ctx.fillStyle = w.color;
+        ctx.moveTo(0, height);
+        for (let x = 0; x < width; x += 10) {
+          const y = Math.sin(x * w.length + w.speed) * w.amplitude + (height * 0.68);
+          ctx.lineTo(x, y);
+        }
+        ctx.lineTo(width, height);
+        ctx.closePath();
+        ctx.fill();
+      });
+
+      requestAnimationFrame(drawWaves);
+    }
+    drawWaves();
+
+    // ----------------- Live Event Countdown Timer -----------------
+    const eventDate = new Date("2027-01-23T09:00:00+05:30").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = eventDate - now;
+
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('timer-days').innerText = days;
+        document.getElementById('timer-hours').innerText = String(hours).padStart(2, '0');
+        document.getElementById('timer-mins').innerText = String(mins).padStart(2, '0');
+        document.getElementById('timer-secs').innerText = String(secs).padStart(2, '0');
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // ----------------- Committees Data & Rendering (4K Floating Cards) -----------------
+    // ★ STANDALONE MODE: All committee data is hardcoded below (no backend required)
+    const allCommittees = [
+      {
+        id: 1, key: "LOK_SABHA",
+        name: "Lok Sabha", forum: "Youth Parliament", category: "Youth Parliament",
+        tagline: "The People's House in Session",
+        agenda: "Debate on the FCRA Amendment Bill 2026 — Regulating Foreign Funding of NGOs and Civil Society",
+        description: "Delegates simulate the Lower House of the Indian Parliament. They draft, debate, and vote on landmark legislation affecting civil liberties and national security in a fully parliamentary procedure format.",
+        eligibility: "Classes IX to XII & Undergraduates",
+        logo: "./assets/committees/lok_sabha.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 2, key: "AIPPM",
+        name: "AIPPM", forum: "Youth Parliament", category: "Youth Parliament",
+        tagline: "All India Political Parties Meet",
+        agenda: "One Nation One Election & The Menace of AI-Generated Political Deepfakes",
+        description: "India's major political parties converge to debate electoral reform and the threat of synthetic media to democratic processes. Delegates represent specific parties with distinct ideological positions.",
+        eligibility: "Classes IX to XII & Undergraduates",
+        logo: "./assets/committees/aippm.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 3, key: "UPLA",
+        name: "UP Legislative Assembly", forum: "Youth Parliament", category: "Youth Parliament",
+        tagline: "Uttar Pradesh Legislative Assembly",
+        agenda: "Addressing Youth Unemployment in UP & Ensuring Transparency in Competitive Examinations",
+        description: "Modelled on the Uttar Pradesh Vidhan Sabha. Delegates debate state-level policy on job creation, exam integrity, and administrative accountability.",
+        eligibility: "Classes IX to XII & Undergraduates",
+        logo: "./assets/committees/upla.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 4, key: "JANMANCH",
+        name: "Jan Manch", forum: "Youth Parliament", category: "Youth Parliament",
+        tagline: "Voice of the Youth — Junior Track",
+        agenda: "Reinventing School Education: Infrastructure Gaps & NEP 2020 Implementation",
+        description: "A specially designed junior track parliament where students in Classes VI–X deliberate on school-level policy reform, bringing grassroots perspectives to national education debates.",
+        eligibility: "Classes VI to X",
+        logo: "./assets/committees/janmanch.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 5, key: "UNHRC",
+        name: "UNHRC", forum: "MUN", category: "MUN",
+        tagline: "UN Human Rights Council",
+        agenda: "Digital Surveillance, Biometric Data Collection, and the Right to Privacy in the AI Era",
+        description: "Member states of the United Nations deliberate on frameworks to protect fundamental human rights against escalating state and corporate surveillance technologies.",
+        eligibility: "Classes IX to XII & Undergraduates",
+        logo: "./assets/committees/unhrc.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 6, key: "UNCSW",
+        name: "UNCSW", forum: "MUN", category: "MUN",
+        tagline: "UN Commission on the Status of Women — Junior",
+        agenda: "Women's Economic Empowerment: Closing the Gender Pay Gap and Financial Inclusion",
+        description: "Junior MUN track for Classes VI–X. Delegates represent nations advocating for gender equity in economic participation, financial access, and workplace equality.",
+        eligibility: "Classes VI to X",
+        logo: "./assets/committees/uncsw.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 7, key: "UNGA",
+        name: "UNGA", forum: "MUN", category: "MUN",
+        tagline: "UN General Assembly",
+        agenda: "Reforming Multilateral Institutions for a Multipolar World Order",
+        description: "The world's foremost deliberative body. Delegates argue for restructuring the UN Security Council, IMF, and WTO to reflect shifting global power dynamics.",
+        eligibility: "Classes IX to XII & Undergraduates",
+        logo: "./assets/committees/unga.jpg",
+        prizes: [
+          { title: "Best Delegate", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      },
+      {
+        id: 8, key: "IIP",
+        name: "IIP", forum: "MUN", category: "MUN",
+        tagline: "International Press — Media & Journalism",
+        agenda: "Media Blackouts in Conflict Zones: Press Freedom, Journalism Ethics & State Accountability",
+        description: "Delegates act as international journalists and press correspondents, covering committee sessions, filing dispatches, and debating the ethics of information control in modern conflicts.",
+        eligibility: "Classes IX to XII & Undergraduates",
+        logo: "./assets/committees/iip.jpg",
+        prizes: [
+          { title: "Best Journalist", amount: "₹8,000", perk: "Certificate + Trophy" },
+          { title: "High Commendation", amount: "₹5,000", perk: "Certificate + Medal" },
+          { title: "Special Mention", amount: "₹4,000", perk: "Certificate" },
+          { title: "Verbal Mention", amount: "₹3,000", perk: "Certificate" }
+        ]
+      }
+    ];
+
+    function loadCommittees() {
+      renderCommittees('ALL');
+    }
+
+    function renderCommittees(filter) {
+      const grid = document.getElementById('committee-grid');
+      grid.innerHTML = '';
+
+      let list = allCommittees;
+      if (filter === 'Youth Parliament') {
+        list = allCommittees.filter(c => c.category === 'Youth Parliament');
+      } else if (filter === 'MUN') {
+        list = allCommittees.filter(c => c.category === 'MUN');
+      } else if (filter === 'JUNIOR') {
+        list = allCommittees.filter(c => c.eligibility.includes('Classes VI to X'));
+      }
+
+      list.forEach(c => {
+        const card = document.createElement('div');
+        card.className = "float-card-4k rounded-[32px] p-6 flex flex-col justify-between group";
+        
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider ${
+                c.category === 'Youth Parliament' ? 'bg-amber-100 text-amber-900 border border-amber-300' : 'bg-emerald-100 text-emerald-900 border border-emerald-300'
+              }">${c.category}</span>
+              <span class="text-[11px] font-bold text-gold-600 bg-gold-50 px-2.5 py-0.5 rounded-full border border-gold-200">₹20K Prizes</span>
+            </div>
+
+            <div class="w-16 h-16 mx-auto rounded-2xl overflow-hidden p-1.5 bg-gradient-to-tr from-forest-900 to-emerald-600 mb-4 group-hover:scale-110 group-hover:rotate-1 transition-all shadow-md">
+              <img src="${c.logo}" alt="${c.name} Emblem" class="w-full h-full object-contain rounded-xl bg-white" />
+            </div>
+
+            <h3 class="font-cinzel text-lg font-bold text-forest-950 text-center mb-1">${c.name}</h3>
+            <p class="text-xs text-emerald-800 font-semibold text-center mb-3">${c.tagline}</p>
+            
+            <div class="p-3.5 bg-forest-50/70 rounded-2xl border border-emerald-100 mb-4">
+              <span class="text-[10px] font-bold uppercase text-slate-500 block mb-1">Agenda:</span>
+              <p class="text-xs text-slate-700 line-clamp-3 leading-relaxed font-normal">${c.agenda}</p>
+            </div>
+            
+            <p class="text-[11px] text-slate-500 mb-4">
+              <i data-lucide="graduation-cap" class="w-3.5 h-3.5 inline text-emerald-700"></i> ${c.eligibility}
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-emerald-100 flex items-center justify-between">
+            <button onclick="openCommitteeDetails('${c.id}')" class="text-xs font-bold text-forest-900 hover:text-emerald-700 flex items-center gap-1">
+              Details & EB <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+            <button onclick="openRegisterModalWithComm('${c.key}')" class="px-3.5 py-1.5 rounded-xl bg-forest-900 hover:bg-forest-950 text-white text-xs font-bold transition-all shadow-sm">
+              Register
+            </button>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    function filterCommittees(filter) {
+      document.querySelectorAll('.comm-filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-filter') === filter) {
+          btn.className = "comm-filter-btn px-4 py-2.5 rounded-2xl text-xs font-bold transition-all bg-forest-900 text-white shadow-md";
+        } else {
+          btn.className = "comm-filter-btn px-4 py-2.5 rounded-2xl text-xs font-bold transition-all bg-white text-slate-700 border border-emerald-200 hover:bg-emerald-50";
+        }
+      });
+      renderCommittees(filter);
+    }
+
+    function openCommitteeDetails(id) {
+      const c = allCommittees.find(x => x.id === id);
+      if (!c) return;
+
+      const container = document.getElementById('committee-modal-content');
+      container.innerHTML = `
+        <div class="flex items-start justify-between border-b border-emerald-100 pb-4">
+          <div class="flex items-center gap-3">
+            <img src="${c.logo}" alt="${c.name}" class="w-12 h-12 rounded-2xl border border-emerald-200 bg-white object-contain p-1 shadow-sm" />
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700">${c.category} · ${c.forum}</span>
+              <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-forest-950">${c.name}</h3>
+            </div>
+          </div>
+          <button onclick="closeCommitteeModal()" class="text-slate-400 hover:text-slate-700 p-1 rounded-lg">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Official Agenda</h4>
+            <p class="text-sm text-forest-950 font-semibold leading-relaxed bg-forest-50 p-4 rounded-2xl border border-emerald-200">${c.agenda}</p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Committee Simulation Overview</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">${c.description}</p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Award Matrix (₹20,000 Cash Pool)</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              ${c.prizes.map(p => `
+                <div class="p-3 rounded-2xl bg-forest-50 border border-emerald-100 text-center">
+                  <span class="text-xs font-bold text-forest-950 block">${p.title}</span>
+                  <span class="font-cinzel text-base font-extrabold text-gold-600 block mt-1">${p.amount}</span>
+                  <span class="text-[9px] text-slate-500">${p.perk}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center justify-between border-t border-emerald-100">
+            <span class="text-xs font-semibold text-emerald-800"><i data-lucide="check" class="w-3.5 h-3.5 inline"></i> Eligibility: ${c.eligibility}</span>
+            <button onclick="closeCommitteeModal(); openRegisterModalWithComm('${c.key}');" class="px-6 py-2.5 rounded-xl bg-forest-900 text-white font-bold text-xs hover:bg-forest-950 shadow-md">
+              Register for this Committee
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('committee-modal').classList.remove('hidden');
+      document.getElementById('committee-modal').classList.add('flex');
+      lucide.createIcons();
+    }
+
+    function closeCommitteeModal() {
+      document.getElementById('committee-modal').classList.add('hidden');
+      document.getElementById('committee-modal').classList.remove('flex');
+    }
+
+    // ----------------- Registration Modal Openers (4K Floating Element) -----------------
+    function openRegisterModal() {
+      const modal = document.getElementById('register-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function openRegisterModalWithComm(key) {
+      openRegisterModal();
+      const c = allCommittees.find(x => x.key === key || x.name === key || x.id == key);
+      const nameEl = document.getElementById('modal-comm-name');
+      if (nameEl) {
+        nameEl.innerText = c ? `${c.name} (${c.category})` : "General Delegate Admission (All 8 Chambers)";
+      }
+    }
+
+    function closeRegisterModal() {
+      const modal = document.getElementById('register-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // ----------------- Photo Gallery Logic (4K Floating Cards) -----------------
+    const galleryItems = [
+      { id: 1, src: './assets/parliament_art.jpg', title: 'The Floor in Full Voice', caption: 'Parliamentary debate session in progress', cat: 'DEBATE' },
+      { id: 2, src: './assets/rohan_madhok.jpg', title: 'Patronage & Vision', caption: 'CEO Mr. Rohan Madhok addressing delegates', cat: 'CAMPUS' },
+      { id: 3, src: './assets/shashwati_sharma.jpg', title: 'Academic Leadership', caption: 'Principal Mrs. Shashwati Sharma on NEP 2020', cat: 'CAMPUS' },
+      { id: 4, src: './assets/pratiksha_shahi.jpg', title: 'Oratorical Excellence', caption: 'Chief Advisor Miss Pratiksha Shahi mentoring youth', cat: 'DEBATE' },
+      { id: 5, src: './assets/committees/lok_sabha.jpg', title: 'Lok Sabha Chamber', caption: 'Legislative deliberation on national security bills', cat: 'DEBATE' },
+      { id: 6, src: './assets/committees/unhrc.jpg', title: 'UNHRC Human Rights Floor', caption: 'International committee on digital privacy', cat: 'MUN' }
+    ];
+
+    function renderGallery(cat) {
+      const grid = document.getElementById('gallery-grid');
+      grid.innerHTML = '';
+
+      let list = galleryItems;
+      if (cat !== 'ALL') {
+        list = galleryItems.filter(x => x.cat === cat);
+      }
+
+      list.forEach(item => {
+        const div = document.createElement('div');
+        div.className = "float-card-4k rounded-[28px] overflow-hidden group cursor-pointer";
+        div.onclick = () => openLightbox(item.src, item.caption);
+
+        div.innerHTML = `
+          <div class="h-64 overflow-hidden relative">
+            <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-950/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-5 text-white">
+              <h4 class="font-cinzel text-sm font-bold">${item.title}</h4>
+              <p class="text-xs text-emerald-200">${item.caption}</p>
+            </div>
+          </div>
+        `;
+        grid.appendChild(div);
+      });
+    }
+
+    function filterGallery(cat) {
+      document.querySelectorAll('.gallery-btn').forEach(b => {
+        if (b.getAttribute('data-cat') === cat) {
+          b.className = "gallery-btn px-4 py-2 rounded-2xl text-xs font-bold bg-forest-900 text-white shadow-md";
+        } else {
+          b.className = "gallery-btn px-4 py-2 rounded-2xl text-xs font-bold bg-white text-slate-700 border border-emerald-200";
+        }
+      });
+      renderGallery(cat);
+    }
+
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+      document.getElementById('lightbox-modal').classList.add('flex');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+      document.getElementById('lightbox-modal').classList.remove('flex');
+    }
+
+    // ----------------- Registration API Handler -----------------
+    async function handleRegistration(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-reg-btn');
+      btn.disabled = true;
+      btn.innerHTML = `<span class="animate-spin mr-2">⏳</span> Validating credentials...`;
+
+      const payload = {
+        full_name: document.getElementById('reg-name').value.trim(),
+        email: document.getElementById('reg-email').value.trim(),
+        phone: document.getElementById('reg-phone').value.trim(),
+        institution: document.getElementById('reg-institution').value.trim(),
+        education_level: document.getElementById('reg-level').value,
+        committee_pref_1: document.getElementById('reg-comm1').value,
+        portfolio_pref: document.getElementById('reg-portfolio') ? document.getElementById('reg-portfolio').value.trim() : "",
+        prior_experience: "Delegate",
+        needs_accommodation: false,
+        transaction_id: document.getElementById('reg-utr').value.trim(),
+        amount_paid: 999
+      };
+
+      try {
+        const res = await fetch('/api/registrations', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        if (!res.ok) {
+          alert("Registration Notice: " + (data.detail || "Could not complete registration"));
+          btn.disabled = false;
+          btn.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4"></i><span>Confirm & Generate Digital Pass</span>`;
+          lucide.createIcons();
+          return;
+        }
+
+        // Close register modal & open ticket modal
+        closeRegisterModal();
+        document.getElementById('ticket-code').innerText = data.ticket_id;
+        document.getElementById('ticket-name').innerText = data.delegate_name;
+        document.getElementById('ticket-comm').innerText = data.committee;
+        
+        document.getElementById('ticket-modal').classList.remove('hidden');
+        document.getElementById('ticket-modal').classList.add('flex');
+        
+        // Reset form
+        document.getElementById('modal-registration-form').reset();
+        btn.disabled = false;
+        btn.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4"></i><span>Confirm & Generate Digital Pass</span>`;
+        lucide.createIcons();
+        fetchStats();
+
+      } catch (err) {
+        alert("Network Error: " + err.message);
+        btn.disabled = false;
+        btn.innerHTML = `Try Again`;
+      }
+    }
+
+    function closeTicketModal() {
+      document.getElementById('ticket-modal').classList.add('hidden');
+      document.getElementById('ticket-modal').classList.remove('flex');
+    }
+
+    function copyUpi() {
+      navigator.clipboard.writeText('stuti34@ptyes');
+      const text = document.getElementById('copy-btn-text');
+      if (text) text.innerText = "Copied!";
+      const modalText = document.getElementById('modal-copy-text');
+      if (modalText) modalText.innerText = "Copied!";
+      setTimeout(() => {
+        if (text) text.innerText = "Copy";
+        if (modalText) modalText.innerText = "Copy UPI";
+      }, 2000);
+    }
+
+    // ----------------- Contact Form Handler -----------------
+    async function handleContact(e) {
+      e.preventDefault();
+      const btn = document.getElementById('contact-submit-btn');
+      btn.disabled = true;
+      btn.innerText = "Submitting...";
+
+      const payload = {
+        name: document.getElementById('contact-name').value.trim(),
+        email: document.getElementById('contact-email').value.trim(),
+        subject: document.getElementById('contact-subject').value.trim(),
+        message: document.getElementById('contact-message').value.trim()
+      };
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        alert(data.message || "Message sent!");
+        e.target.reset();
+      } catch (err) {
+        // Fallback for standalone preview mode
+        alert("Thank you, " + payload.name + "! Your query has been received by the Secretariat (+91 73938 24401). We will reply to your email shortly.");
+        e.target.reset();
+      } finally {
+        btn.disabled = false;
+        btn.innerText = "Submit Query to Secretariat";
+      }
+    }
+
+    // ----------------- Admin Management Portal -----------------
+    function openAdminModal() {
+      document.getElementById('admin-modal').classList.remove('hidden');
+      document.getElementById('admin-modal').classList.add('flex');
+      loadAdminRegistrations();
+    }
+
+    function closeAdminModal() {
+      document.getElementById('admin-modal').classList.add('hidden');
+      document.getElementById('admin-modal').classList.remove('flex');
+    }
+
+    async function loadAdminRegistrations() {
+      const search = document.getElementById('admin-search-input').value.trim();
+      const comm = document.getElementById('admin-comm-filter').value;
+      let list = [];
+
+      try {
+        const res = await fetch(`/api/admin/registrations?search=${encodeURIComponent(search)}&committee=${encodeURIComponent(comm)}`);
+        if (res.ok) {
+          const data = await res.json();
+          list = data.registrations || [];
+        } else {
+          throw new Error("offline");
+        }
+      } catch (err) {
+        // Fallback demo delegates for standalone preview
+        list = [
+          { id: 1, ticket_id: "SAM-2027-1082", full_name: "Ashwani Mishra", email: "ashwani@samanvay.in", phone: "+91 98765 43210", institution: "Sunbeam Samneghat", committee_pref_1: "Lok Sabha", transaction_id: "UPI-98271039812", payment_status: "CONFIRMED" },
+          { id: 2, ticket_id: "SAM-2027-4491", full_name: "Stuti Singh", email: "stuti@samanvay.in", phone: "+91 73938 24401", institution: "Banaras Hindu University", committee_pref_1: "UNHRC", transaction_id: "UPI-44910283910", payment_status: "CONFIRMED" },
+          { id: 3, ticket_id: "SAM-2027-8821", full_name: "Rohan Varma", email: "rohan@dpsvns.edu", phone: "+91 99182 33219", institution: "Delhi Public School Varanasi", committee_pref_1: "AIPPM", transaction_id: "UPI-8821940129", payment_status: "CONFIRMED" },
+          { id: 4, ticket_id: "SAM-2027-5120", full_name: "Ananya Dixit", email: "ananya@chs.ac.in", phone: "+91 94152 77810", institution: "Central Hindu School", committee_pref_1: "UNCSW", transaction_id: "UPI-5120984123", payment_status: "PENDING" },
+          { id: 5, ticket_id: "SAM-2027-9031", full_name: "Devendra Pratap", email: "devendra@iitbhu.ac.in", phone: "+91 88741 09283", institution: "IIT (BHU) Varanasi", committee_pref_1: "UP Legislative Assembly", transaction_id: "UPI-9031847120", payment_status: "CONFIRMED" }
+        ];
+        if (search) {
+          list = list.filter(r => r.full_name.toLowerCase().includes(search.toLowerCase()) || r.ticket_id.toLowerCase().includes(search.toLowerCase()));
+        }
+        if (comm) {
+          list = list.filter(r => r.committee_pref_1 === comm);
+        }
+      }
+
+      // Update stats
+      document.getElementById('admin-total-reg').innerText = list.length;
+      const verified = list.filter(r => r.payment_status === 'CONFIRMED').length;
+      document.getElementById('admin-verified-reg').innerText = verified;
+      document.getElementById('admin-revenue').innerText = "₹" + (verified * 999).toLocaleString();
+
+      const tbody = document.getElementById('admin-table-body');
+      tbody.innerHTML = '';
+
+      if (list.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" class="text-center py-6 text-slate-400">No registrations found.</td></tr>`;
+        return;
+      }
+
+      list.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50";
+        tr.innerHTML = `
+          <td class="px-4 py-3 font-mono font-bold text-forest-950">${r.ticket_id}</td>
+          <td class="px-4 py-3">
+            <span class="font-bold block">${r.full_name}</span>
+            <span class="text-[10px] text-slate-500">${r.email} · ${r.phone}</span>
+          </td>
+          <td class="px-4 py-3 text-slate-600">${r.institution}</td>
+          <td class="px-4 py-3 font-semibold text-emerald-800">${r.committee_pref_1}</td>
+          <td class="px-4 py-3 font-mono text-[11px] text-slate-600">${r.transaction_id || '--'}</td>
+          <td class="px-4 py-3">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${
+              r.payment_status === 'CONFIRMED' ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-amber-100 text-amber-800'
+            }">${r.payment_status}</span>
+          </td>
+          <td class="px-4 py-3 text-right">
+            <button onclick="toggleRegStatus(${r.id}, '${r.payment_status === 'CONFIRMED' ? 'PENDING' : 'CONFIRMED'}')" class="text-[10px] font-semibold text-emerald-700 hover:underline">
+              Toggle Status
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    async function toggleRegStatus(id, newStatus) {
+      try {
+        await fetch(`/api/admin/registrations/${id}/status`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ payment_status: newStatus })
+        });
+      } catch (err) {}
+      loadAdminRegistrations();
+    }
+
+    // ----------------- Stats Fetcher -----------------
+    async function fetchStats() {
+      try {
+        const res = await fetch('/api/stats');
+        const data = await res.json();
+        if (data.total_registrations) {
+          document.getElementById('stat-participants').innerText = data.total_registrations + "+";
+        }
+      } catch (e) {}
+    }
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Initialize page
+    loadCommittees();
+    renderGallery('ALL');
+    fetchStats();
+  </script>
+</body>
+</html>
