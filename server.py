@@ -1,5 +1,5 @@
 """
-Sunbeam Samanvay 1.0 (Ace One National Conclave) - Production Backend Server
+Sunbeam Samanvay 1.0 (National Youth Parliament & MUN) - Production Backend Server
 Powered by FastAPI, SQLite, Pydantic
 """
 
@@ -21,7 +21,7 @@ DB_PATH = "samanvay.db"
 
 app = FastAPI(
     title="Sunbeam Samanvay 1.0 API",
-    description="Backend API for Sunbeam Samanvay 1.0 (Ace One National Youth Parliament & MUN)",
+    description="Backend API for Sunbeam Samanvay 1.0 (Annual Youth Parliament & MUN)",
     version="1.0.0"
 )
 
@@ -143,10 +143,10 @@ COMMITTEES_DATA = [
         "agenda": "Foreign Contribution (Regulation) Amendment Bill, 2026: Balancing National Security, State-Control Over Foreign Funded Assets and Contribution.",
         "description": "Step into the shoes of Members of Parliament representing sovereign India's diverse constituencies. Deliberate, debate constitutional clauses, and craft robust legislation on sovereign security and foreign funding.",
         "prizes": [
-            {"title": "Best Parliamentarian", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Parliamentarian", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -161,10 +161,10 @@ COMMITTEES_DATA = [
         "agenda": "Discussion on the framework of national electorate reforms, simultaneous polls ('One Nation, One Election') and the regulation of legal campaigning / AI deepfakes in elections.",
         "description": "Brings together national party leaders across political spectrums. Deliberate contentious democratic electoral reforms, legislative restructuring, and technological guardrails.",
         "prizes": [
-            {"title": "Best Leader", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Leader", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -179,10 +179,10 @@ COMMITTEES_DATA = [
         "agenda": "Deliberation on state's employment generation strategy, public recruitment examination transparency and youth migration management.",
         "description": "The floor of Uttar Pradesh's Vidhan Sabha tests the courage of legislators debating the state's largest challenges: government exam integrity, youth employment, and economic infrastructure.",
         "prizes": [
-            {"title": "Best Legislator", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Legislator", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -197,10 +197,10 @@ COMMITTEES_DATA = [
         "agenda": "Deliberation on reforms in school education with special reference in practical learning, skill development and education under NEP 2020.",
         "description": "A tailored forum exclusively designed for students from Class 6 to 10 to articulate ideas on student well-being, educational reforms, and skill-based curricula.",
         "prizes": [
-            {"title": "Best Junior Speaker", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Junior Speaker", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -215,10 +215,10 @@ COMMITTEES_DATA = [
         "agenda": "Deliberation in safeguarding human rights and privacy in the agenda of widespread state sponsored digital surveillance and biometric tracking.",
         "description": "Diplomats address cutting-edge human rights violations in the digital era: state Pegasus spyware, biometric facial recognition surveillance, and digital personal liberty.",
         "prizes": [
-            {"title": "Best Delegate", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Delegate", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -233,10 +233,10 @@ COMMITTEES_DATA = [
         "agenda": "Discussion on accelerating women's economic empowerment and legal reforms to bridge leadership gaps in post-industrial workforce.",
         "description": "Focused committee for younger diplomats to craft resolutions empowering women in STEM, corporate boards, wage equality, and international labor legal rights.",
         "prizes": [
-            {"title": "Best Delegate", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Delegate", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -251,10 +251,10 @@ COMMITTEES_DATA = [
         "agenda": "Deliberation on reforming global multilateral institutions and governance framework to address escalating geopolitical fragmentation.",
         "description": "The quintessential committee of global nations. Addressing UN Security Council veto reforms, multilateral treaty adherence, and international conflict resolution.",
         "prizes": [
-            {"title": "Best Delegate", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Delegate", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     },
     {
@@ -269,10 +269,10 @@ COMMITTEES_DATA = [
         "agenda": "Assessing state mandated media blackouts and the state silencing of journalism under the guise of national security.",
         "description": "Reporters, investigative columnists, and photojournalists holding power accountable. Publish real-time conference gazettes, interview key diplomats, and document proceedings.",
         "prizes": [
-            {"title": "Best Journalist", "amount": "₹10,000", "perk": "Trophy + Memento + Certificate of Excellence"},
-            {"title": "High Commendation", "amount": "₹6,000", "perk": "Memento + Certificate of Merit"},
-            {"title": "Special Mention", "amount": "₹3,000", "perk": "Certificate of Merit"},
-            {"title": "Honourable Mention", "amount": "₹1,000", "perk": "Certificate of Merit"}
+            {"title": "Best Journalist", "perk": "Trophy + Memento + Certificate of Excellence"},
+            {"title": "High Commendation", "perk": "Memento + Certificate of Merit"},
+            {"title": "Special Mention", "perk": "Certificate of Merit"},
+            {"title": "Honourable Mention", "perk": "Certificate of Merit"}
         ]
     }
 ]
@@ -283,7 +283,7 @@ COMMITTEES_DATA = [
 def health_check():
     return {
         "status": "healthy",
-        "event": "Sunbeam Samanvay 1.0 (Ace One Conclave)",
+        "event": "Sunbeam Samanvay 1.0 (Youth Parliament & MUN)",
         "timestamp": datetime.utcnow().isoformat()
     }
 
@@ -313,9 +313,9 @@ def get_stats():
         "verified_registrations": verified_reg,
         "capacity_target": 700,
         "slots_remaining": max(0, 700 - base_display_count),
-        "total_prize_pool": "₹1,60,000+",
+        "total_prize_pool": "Attractive Cash Prizes & Trophies",
         "total_committees": 8,
-        "early_bird_fee": 999,
+        "early_bird_fee": "TBA",
         "regular_fee": 1199,
         "committee_breakdown": comm_counts
     }

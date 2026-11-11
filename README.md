@@ -1,11 +1,11 @@
-# Sunbeam Samanvay 1.0 (Ace One National Conclave)
+# Sunbeam Samanvay 1.0
 
 Official Production Platform for **Sunbeam Samanvay 1.0** — The Annual Youth Parliament & Model United Nations Conference hosted by **Sunbeam Academy, Samneghat, Varanasi**.
 
 ---
 
 ## 🌟 Core Highlights
-* **Name & Identity:** Sunbeam Samanvay 1.0 / Ace One National Conclave
+* **Name & Identity:** Sunbeam Samanvay 1.0
 * **Motto:** *"Speak. Shape. Solve."*
 * **Core Philosophy:** *"Disagreement is where dialogue begins."* · *"Bring your strongest argument, not your loudest voice."*
 * **Event Dates:** **23rd & 24th January 2027**
@@ -71,7 +71,7 @@ Built on **FastAPI** with an embedded **SQLite** relational database (`samanvay.
 
 ### 2. Frontend (`public/index.html`)
 * Responsive, fluid, single-page application.
-* Real-time UPI QR payment integration (`stuti34@ptyes`).
+* Direct delegate registration workflow via Google Form & Secretariat Desk.
 * Interactive committee filter and deep-dive modals.
 * Interactive photo gallery with category filtering and fullscreen Lightbox.
 * Live countdown timer to January 23, 2027, 09:00 AM IST.
